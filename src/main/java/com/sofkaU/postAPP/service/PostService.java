@@ -5,9 +5,11 @@ import com.sofkaU.postAPP.entity.Post;
 import com.sofkaU.postAPP.repository.CommentRepository;
 import com.sofkaU.postAPP.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PostService implements PostServiceInterface {
 
     @Autowired
