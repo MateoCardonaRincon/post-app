@@ -22,7 +22,7 @@ public class Post {
             fetch = FetchType.EAGER)
     private List<Comment> comments = new ArrayList<>();
 
-    private Post addComment(Comment comment) {
+    public Post addComment(Comment comment) {
         this.comments.add(comment);
         return this;
     }
