@@ -1,6 +1,5 @@
 package com.sofkaU.postAPP.entity;
 
-
 import lombok.Data;
 
 import javax.persistence.*;
@@ -16,5 +15,7 @@ public class Comment {
 
     private String message;
 
-    private Long fk_post_id;
+    private Long fkPostId;
+
+    private Long fkUserId;
 }

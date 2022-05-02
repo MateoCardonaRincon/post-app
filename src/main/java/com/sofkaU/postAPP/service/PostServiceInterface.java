@@ -11,10 +11,14 @@ public interface PostServiceInterface {
 
     Post createComment(Comment comment);
 
-    void deleteComment(Comment comment);
+    List<Post> getAllPosts();
 
-    void deletePost(Post post);
+    List<Post> getPostsByUserId(Long userId);
 
-    List<Post> findAllPosts();
+    void deleteComment(Long commentId);
+
+    void deletePost(Long postId);
+
+    void deletePostsByUserId(Long userId);
 
 }

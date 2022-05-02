@@ -19,9 +19,9 @@ public class Post {
 
     private String message;
 
-    @OneToMany(
-            cascade = CascadeType.ALL,
-            fetch = FetchType.EAGER)
+    private Long fkUserId;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Comment> comments = new ArrayList<>();
 
     public Post addComment(Comment comment) {
